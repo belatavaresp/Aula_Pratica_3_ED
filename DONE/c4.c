@@ -5,6 +5,7 @@ int rows, cols;
 int** data;
 };
 struct Matrix* rotation3D=0;
+
 int main(){
   int i;
   char * text;
