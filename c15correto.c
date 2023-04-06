@@ -6,9 +6,8 @@ int inc(int a) {
 }
 
 int main(int argc, char** argv) {
-  //sempre retorna a mesma coisa (a é inicializada a cada iteração)
+  int a = 1;
   for(int i=1; i < 5; i++) {
-     int a = 1;
      a = inc(a);
   }
 

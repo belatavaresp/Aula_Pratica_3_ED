@@ -1,19 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//funções que não retornam valores int
 int actual_calc(int a, int b){
   int c;
-  c=a/b;
-  return 0;
+  if (b != 0) {
+    c = a/b;
+    return c;
+  } else {
+    printf("Erro: divisão por zero\n");
+    return 0;
+  }
 }
 
-//divisão por zero
 int calc(){
   int a;
   int b;
-  a=13;
-  b=0;
+  a = 13;
+  b = 0;
   actual_calc(a, b);
   return 0;
 }
