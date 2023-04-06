@@ -8,6 +8,7 @@ int main(void)
         {
                 p = malloc(128);
                 printf("%ld\n", (long)p);
+                // lack of free
         }
         return (0);
 }
